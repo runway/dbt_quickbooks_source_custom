@@ -40,6 +40,7 @@ final as (
         balance,
         cast(doc_number as {{ dbt.type_string() }}) as doc_number,
         total_amount,
+        total_tax,
         cast(deposit_to_account_id as {{ dbt.type_string() }}) as deposit_to_account_id,
         created_at,
         cast(customer_id as {{ dbt.type_string() }}) as customer_id,
