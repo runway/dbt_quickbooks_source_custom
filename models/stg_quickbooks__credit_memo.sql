@@ -41,6 +41,7 @@ final as (
         balance,
         cast(doc_number as {{ dbt.type_string() }}) as doc_number,
         total_amount,
+        total_tax,
         currency_id,
         cast(class_id as {{ dbt.type_string() }}) as class_id,
         cast(department_id as {{ dbt.type_string() }}) as department_id,
