@@ -43,6 +43,7 @@ final as (
         exchange_rate,
         credit,
         total_amount,
+        total_tax
         payment_type,
         cast(department_id as {{ dbt.type_string() }}) as department_id,
         cast(customer_id as {{ dbt.type_string() }}) as customer_id,
